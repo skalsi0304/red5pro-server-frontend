@@ -11,7 +11,7 @@
   Integer videoWidthMax = 640;
   Integer videoHeightMin = 480;
   Integer videoHeightMax = 480;
-  Integer signalSocketOnly = 0;
+  Integer signalSocketOnly = 1;
 
   if (request.getParameter("view") != null) {
     tech = request.getParameter("view");
@@ -79,7 +79,7 @@
         <div id="subcontent-section">
           <div id="subcontent-section-text">
             <h1 class="red-text">Live Broadcast For Any Screen</h1>
-            <p class="heading-title">To start a Broadcast: 
+            <p class="heading-title">To start a Broadcast:
               <ol>
                 <li>Allow browser access to device(s)</li>
                 <li>Provide a <span class="bold">Stream Name</span></li>

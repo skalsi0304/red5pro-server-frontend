@@ -14,7 +14,7 @@
   String buffer = "0.5";
   Integer audioBandwidth = -1;
   Integer videoBandwidth = -1;
-  Integer signalSocketOnly = 0;
+  Integer signalSocketOnly = 1;
 
   if (request.getParameter("buffer") != null) {
     buffer = request.getParameter("buffer");

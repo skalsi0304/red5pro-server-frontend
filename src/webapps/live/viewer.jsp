@@ -13,6 +13,7 @@
     Integer audioBandwidth = -1;
     Integer videoBandwidth = -1;
     Integer enableAnalytics = 0;
+    Integer signalSocketOnly = 1;
 
     String analytics_protocol = null;
     String analytics_host = null;
@@ -72,6 +73,9 @@
 
     if (request.getParameter("videoBW") != null) {
       videoBandwidth = Integer.parseInt(request.getParameter("videoBW"));
+    }
+    if (request.getParameter("dc") != null) {
+    signalSocketOnly =  Integer.parseInt(request.getParameter("dc"));
     }
 %>
 <!doctype html>
@@ -165,6 +169,7 @@
           assignIfDefined("<%=protocol%>", 'targetProtocol');
           assignIfDefined(<%=audioBandwidth%>, 'r5proAudioBandwidth');
           assignIfDefined(<%=videoBandwidth%>, 'r5proVideoBandwidth');
+          assignIfDefined(<%=signalSocketOnly%>, 'r5proSignalSocketOnly');
 
           if (<%=enableAnalytics%>) {
               assignIfDefined("<%=analytics_protocol%>", 'analytics_protocol');
