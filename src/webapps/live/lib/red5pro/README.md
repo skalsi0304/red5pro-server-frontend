@@ -32,51 +32,13 @@
     * [Lifecycle Events](SHARED_OBJECT_README.md#lifecycle-events-shared-object)
 * [Contributing](#contributing)
 
-# Quickstart
-
-> Important Note About `8.0.0` Release
-
-**Red5 Pro SDK has been published on NPM!**
-
-While currently not open source, the SDK build has been published to NPM to allow you to integrate into your projects with greater ease and dependency management.
-
-## Installation
-
-### As `script` in HTML page
-
-```
-<script src="https://unpkg.com/red5pro-html-sdk@latest/red5pro-sdk.min.js"></script>
-```
-
-... or if you know the version:
-
-```
-<script src="https://unpkg.com/red5pro-html-sdk@8.0.0/red5pro-sdk.min.js"></script>
-```
-
-## Using `npm` or `yarn` for you browser-based projects
-
-```
-npm install --save-dev red5pro-html-sdk
-```
-
-```
-yarn install --dev red5pro-html-sdk
-```
-
-### Usage
-
-All members exposed on the otherwise global `window.red5prosdk` if loading as a script on an HTML page are importable from the `red5pro-html-sdk` module:
-
-_publisher-example.js_
-
-```
-import { RTCPublisher } from 'red5pro-html-sdk'
-```
-
+## Quickstart
 To begin working with the *Red5 Pro HTML5 SDK* in your project:
 
-### Quick Start (browser)
+### Installation
+In a browser:  
+[download the latest release](https://account.red5pro.com/download)
+
 ```html
 <!doctype html>
 <html>
@@ -95,7 +57,7 @@ To begin working with the *Red5 Pro HTML5 SDK* in your project:
       <video id="red5pro-subscriber" width="640" height="480" controls autoplay></video>
     </div>
     <!-- Red5 Pro SDK -->
-    <script src="https://unpkg.com/red5pro-html-sdk@latest/red5pro-sdk.min.js"></script>
+    <script src="lib/red5pro/red5pro-sdk.min.js"></script>
     <!-- Create Pub/Sub -->
     <script>
       (function(red5prosdk) {
