@@ -5,7 +5,7 @@
   },
   "r5pro-streammanager": {
     "repositoryUrl": "git@github.com:infrared5/red5pro-auto-scaling.git",
-    "branch": "feature/RPRO-8574"
+    "branch": "feature/husky-auto-patch01"
 
   },
   "r5pro-api": {
